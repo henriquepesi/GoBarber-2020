@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import signInBackground from '../../assets/sign-in-background.png';
+import signInBackground from '../../assets/sign-up-background.png';
 
 export const Container = styled.div`
   height: 100vh;
@@ -29,6 +29,10 @@ export const Content = styled.div`
     margin-bottom: 24px;
   }
 
+  input {
+    color: #f4ede8;
+  }
+
   a {
     color: #f4ede8;
     display: block;
@@ -42,7 +46,7 @@ export const Content = styled.div`
   }
 
   > a {
-    color: ${(props) => shade(0.2, props.theme.colors.orange)};
+    color: #f4ede8;
     display: block;
     margin-top: 24px;
     text-decoration: none;
