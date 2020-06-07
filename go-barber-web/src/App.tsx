@@ -7,11 +7,17 @@ import SignUp from './pages/SignUp';
 
 import GlobalStyle from './styles/global';
 
+import { AuthProvider } from './context/AuthContext';
+
 const App: React.FC = () => (
-  <ThemeProvider theme={variables}>
-    <SignUp />
+  <>
+    <AuthProvider>
+      <ThemeProvider theme={variables}>
+        <SignIn />
+      </ThemeProvider>
+    </AuthProvider>
     <GlobalStyle />
-  </ThemeProvider>
+  </>
 );
 
 export default App;
